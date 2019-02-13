@@ -9,7 +9,7 @@ export default class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
-        <Title title="products" />
+        <Title title="Products" />
         <ProductConsumer>
           {store => (
             <ListWrapper>
