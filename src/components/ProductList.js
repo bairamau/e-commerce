@@ -30,7 +30,7 @@ const ListWrapper = styled.ul`
   margin:0;
   padding:0 0 30px 0;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   list-style: none;
   grid-template-columns: repeat(auto-fill, 360px);
   justify-items:center;
