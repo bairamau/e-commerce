@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 export default class Default extends Component {
   render() {
-    console.log(this.props);
     return (
       <div
         style={{
@@ -12,7 +11,9 @@ export default class Default extends Component {
           justifyContent: "center"
         }}
       >
-        <p style={{fontSize: "36px"}}>{this.props.location.pathname} not found</p>
+        <p style={{ fontSize: "36px" }}>
+          {this.props.location.pathname} not found
+        </p>
       </div>
     );
   }

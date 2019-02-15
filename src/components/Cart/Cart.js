@@ -20,7 +20,7 @@ export default class Cart extends Component {
                   <CartEntries />
                   <CartList value={value} />
                 </Grid>
-                <CartTotal value={value} />
+                <CartTotal value={value} history={this.props.history} />
               </React.Fragment>
             ) : (
               <EmptyCart />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ButtonContainer } from "./Button";
 
-import logo from "../logo.svg";
+import logo from "../logo.png";
 
 export default class Navbar extends Component {
   render() {
@@ -30,8 +30,10 @@ export default class Navbar extends Component {
 
 const NavWrapper = styled.nav`
   padding: 10px;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
+  align-items: center;
   background: var(--mainBlue);
   .nav-link {
     padding: 0 30px;
@@ -41,6 +43,10 @@ const NavWrapper = styled.nav`
   }
   .nav-left {
     display: flex;
-    align-items:center;
+    align-items: center;
+    img {
+      max-width: 50px;
+      border-radius: 50%;
+    }
   }
 `;

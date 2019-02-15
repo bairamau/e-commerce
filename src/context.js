@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import { storeProducts, detailProduct } from "./data";
 
 const ProductContext = React.createContext();
-//Provider
-//Consumer
 
 class ProductProvider extends Component {
   state = {
@@ -52,8 +50,7 @@ class ProductProvider extends Component {
         products: tempProducts,
         cart: [...this.state.cart, product]
       }),
-      this.addTotals,
-      () => console.log(this.state)
+      this.addTotals
     );
   };
 
@@ -115,7 +112,6 @@ class ProductProvider extends Component {
       () => {
         this.setProducts();
         this.addTotals();
-        console.log(this.state.total);
       }
     );
   };
@@ -128,7 +124,6 @@ class ProductProvider extends Component {
     const tempTax = cartSubtotal * 0.2;
     const cartTax = parseFloat(tempTax.toFixed(2));
     const cartTotal = cartSubtotal + cartTax;
-    console.log(cartSubtotal, cartTax, cartTotal);
     this.setState(() => ({
       cartSubtotal,
       cartTax,

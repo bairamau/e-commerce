@@ -4,22 +4,22 @@ export default function CartEntries() {
   return (
     <React.Fragment>
       <div>
-        <p>Products</p>
+        <p>PRODUCTS</p>
       </div>
       <div>
-        <p>name of product</p>
+        <p>NAME OF PRODUCT</p>
       </div>
       <div>
-        <p>price</p>
+        <p>PRICE</p>
       </div>
       <div>
-        <p>quantity</p>
+        <p>QUANTITY</p>
       </div>
       <div>
-        <p>remove</p>
+        <p>REMOVE</p>
       </div>
       <div>
-        <p>total</p>
+        <p>TOTAL</p>
       </div>
     </React.Fragment>
   );
